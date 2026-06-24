@@ -16,7 +16,8 @@ jobs:
 
                         - name: Initialize CodeQL
                           uses: github/codeql-action/init
-                          languages: 'java-kotlin' 
+                          with:
+                                  languages: 'java-kotlin' 
 
                         - name: Performing CodeQL Analysis
                           uses: github/codeql-action/analyze
